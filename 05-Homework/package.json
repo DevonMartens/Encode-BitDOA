@@ -1,0 +1,32 @@
+{
+  "name": "05-homework",
+  "version": "1.0.0",
+  "scripts": {
+    "build": "hardhat compile",
+    "test:light": "hardhat test",
+    "test": "hardhat coverage",
+    "deploy:local": "hardhat run --network localhost scripts/deployVolcanoCoin.js",
+    "deploy:rinkeby": "hardhat run --network rinkeby scripts/deployVolcanoCoin.js",
+    "local-testnet": "hardhat node"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@nomiclabs/hardhat-ethers": "^2.0.2",
+    "@nomiclabs/hardhat-waffle": "^2.0.1",
+    "chai": "^4.3.4",
+    "ethereum-waffle": "^3.4.0",
+    "ethers": "^5.5.1",
+    "hardhat": "^2.6.8",
+    "solidity-coverage": "^0.7.17"
+  },
+  "dependencies": {
+    "@openzeppelin/contracts": "^4.4.1"
+  },
+  "main": "hardhat.config.js",
+  "directories": {
+    "test": "test"
+  },
+  "description": ""
+}
