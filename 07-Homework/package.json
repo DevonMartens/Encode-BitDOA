@@ -1,0 +1,17 @@
+{
+  "name": "07-homework",
+  "version": "1.0.0",
+  "main": "src/app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "ipfs": "^0.60.0",
+    "it-all": "^1.0.6"
+  },
+  "description": ""
+}
