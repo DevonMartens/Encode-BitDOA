@@ -32,3 +32,5 @@ Change any other contracts you inherit from to use the upgradeable version
 4. https://docs.openzeppelin.com/upgrades-plugins/1.x/ (https://docs.openzeppelin.com/upgrades- plugins/1.x/) 
 
 5. https://forum.openzeppelin.com/t/uups-proxies-tutorial-solidity-javascript/7786 (https://forum.openzeppelin.com/t/uups-proxies-tutorial-solidity-javascript/7786)
+
+6. In addition I found [this video](https://www.youtube.com/watch?v=bdXJmWajZRY) helpful.
