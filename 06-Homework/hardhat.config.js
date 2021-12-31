@@ -1,8 +1,9 @@
+require('dotenv').config()
 require("@nomiclabs/hardhat-waffle");
 require('solidity-coverage');
 require("@nomiclabs/hardhat-etherscan");
 
-let secret = require("./secret")
+
 
 /**
  * @type import('hardhat/config').HardhatUserConfig
@@ -11,11 +12,11 @@ module.exports = {
   solidity: "0.8.10",
   networks: {
     rinkeby: {
-      url: secret.url,
-      accounts: [secret.key]
+      url: `https://rinkeby.infura.io/v3/${process.env.INFURA_PROJECT_ID}`,
+      accounts: [`0x${process.env.PRIVATE_KEY}`]
     }
   },
   etherscan: {
-    apiKey: ""
+    apiKey: process.env.ETHERSCAN_API_KEY
   }
 };

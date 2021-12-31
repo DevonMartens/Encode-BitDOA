@@ -1,6 +1,7 @@
 
 const { ethers } = require("hardhat");
 
+require('dotenv').config()
 // const provider = new ethers.providers.getDefaultProvider("rinkeby");
 const provider = new ethers.providers.WebSocketProvider("ws://127.0.0.1:8545");
 
@@ -9,7 +10,7 @@ async function basicProvider() {
   console.log("block number", blockNumber);
 
   let balance = await provider.getBalance(
-    ""
+    "0xf39fd6e51aad88f6f4ce6ab8827279cfffb92266"
   );
   console.log(balance);
   balance = ethers.utils.formatEther(balance);
@@ -20,7 +21,7 @@ async function basicProvider() {
 }
 
 let myWallet01 = new ethers.Wallet(
-  "",
+  "0xac0974bec39a17e36ba4a6b4d238ff944bacb478cbed5efcae784d7bf4f2ff80",
   provider
 );
 
@@ -32,7 +33,7 @@ async function sendingTx() {
   console.log("my addr:", myAddr);
 
   let txResponse = await myWallet01.sendTransaction({
-    to: "",
+    to: "0x3c44cdddb6a900fa2b585dd299e03d12fa4293bc",
     value: ethers.utils.parseEther("1"),
   });
 
@@ -59,12 +60,12 @@ async function deployContract() {
 }
 
 let myWallet02 = new ethers.Wallet(
-  "",
+  "0x59c6995e998f97a5a0044966f0945389dc9e86dae88c7a8412f4603b6b78690d",
   provider
 );
 
 async function connectToContract() {
-  let contractAddr = "";
+  let contractAddr = "0x0165878A594ca255338adfa4d48449f69242Eb8F";
 
   const volcanoContract = await ethers.getContractAt(
     "VolcanoCoin",

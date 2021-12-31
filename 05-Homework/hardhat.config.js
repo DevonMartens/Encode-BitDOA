@@ -1,6 +1,7 @@
+require('dotenv').config()
 require("@nomiclabs/hardhat-waffle");
 require('solidity-coverage');
-let secret = require("./secret")
+
 
 /**
  * @type import('hardhat/config').HardhatUserConfig
