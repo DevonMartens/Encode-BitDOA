@@ -1,5 +1,9 @@
 # BitDOA BootCamp
 
+--- 
+A note to the grader, I pushed a private key, embarressing and had to delete my original repo... that is why I have this one now...
+
+---
 #### What is this repo for?
 
 
