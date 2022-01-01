@@ -9,9 +9,9 @@
 3. Make your contract upgradeable by inheriting from Open Zeppelin UUPSUpgradeable
 
 4. Make the necessary changes to your contract
-Replace a contructor with an initialize function
-Ensure that all necessary initialisation is being done that function
-Change any other contracts you inherit from to use the upgradeable version
+* Replace a contructor with an initialize function
+* Ensure that all necessary initialisation is being done that function
+* Change any other contracts you inherit from to use the upgradeable version
 
 5. Use the relevant plugin to deploy your contract.
 
