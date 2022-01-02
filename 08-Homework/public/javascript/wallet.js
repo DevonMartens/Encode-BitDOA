@@ -37,3 +37,19 @@ async function mintNft() {
 
     console.log("Minting your FireBear!", await tx.wait());
 }
+
+//likely not work along with metadata
+async function transferNft(to, tokenId) {
+    const fireBearContract = new ethers.Contract(fireBearAddress, fireBearAbi, signer);
+    const from = await signer.getAddress();
+
+    console.log(Object.keys(fireBearContract));
+
+    console.log("Transfer NFT:" + tokenId);
+    console.log("From account:" + from);
+    console.log("To account:" + to);
+
+    tx = await fireBearContract["safeTransferFrom(address,address,uint256)"](from, to, tokenId);
+
+    console.log("Let's transfer!", await tx.wait());
+}
